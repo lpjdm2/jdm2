@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Librería y Papelería Jesús de la Misericordia II en Amatitlán. Encuentra útiles escolares, artículos de oficina, productos de librería y servicios adicionales.">
+    <meta name="keywords" content="papelería, librería, útiles escolares, oficina, Amatitlán, Jesús de la Misericordia II, impresiones, emplasticados">
+    <title>Librería y Papelería Jesús de la Misericordia II | Amatitlán</title>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="httloudflarps://cdnjs.ce.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Icono de la pestaña (Favicon) -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="info-items">
+                <span><i class="fas fa-map-marker-alt"></i> 2A Avenida 8A calle, Amatitlán, Guatemala</span>
+                <span><i class="fas fa-phone"></i> +502 5630-5571</span>
+                <span><i class="fas fa-envelope"></i> elimarpal@hotmail.com</span>
+            </div>
+            <a href="https://goo.gl/maps/search/2A+Avenida+8A+calle,+Amatitlán,+Guatemala" target="_blank" class="btn-top">Cómo llegar</a>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header id="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo Jesús de la Misericordia II" class="logo-img" onerror="this.style.display='none'">
+                    <span class="logo-text">Librería y Papelería "Jesús de la Misericordia II"</span>
+                </a>
+            </div>
+            
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="https://libreria-jesus-de-la-misericordia-2.onrender.com/index.html"><i class="fas fa-sign-in-alt"></i> Ingreso al sistema</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Cambiar modo oscuro/claro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-carousel" id="hero-slider">
+        <div class="carousel-track">
+            
+            <!-- Diapositiva 1 (Tu mensaje original) -->
+            <div class="carousel-slide" style="background-image: url('img/bg.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Todo en útiles escolares y de oficina</h1>
+                    <p class="slide-description">
+                        Somos tu aliado confiable para el regreso a clases y el trabajo diario. 
+                        Descubre nuestra variedad con el trato familiar que nos caracteriza.
+                    </p>
+                    <div class="slide-buttons">
+                        <a href="#productos" class="btn btn-primary">Ver productos</a>
+                        <a href="#contacto" class="btn btn-outline">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diapositiva 2 (Especial Escolar) -->
+            <div class="carousel-slide" style="background-image: url('img/bg2.jpg');">
+                <div class="carousel-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">¡Equípate para el Regreso a Clases!</h2>
+                    <p class="slide-description">
+                        Cuadernos, lápices de colores, mochilas y carpetas al mejor precio. 
+                        Armamos la lista escolar completa de tus hijos sin complicaciones.
+                    </p>
+                    <div class="slide-buttons">
+                        <a href="#productos" class="btn btn-primary">Ver catálogo escolar</a>
+                        <a href="#contacto" class="btn btn-outline">Cotizar mi lista</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diapositiva 3 (Especial Oficina) -->
+            <div class="carousel-slide" style="background-image: url('img/bg3.webp');">
+                <div class="carousel-overlay"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title">Soluciones Eficientes para tu Oficina</h2>
+                    <p class="slide-description">
+                        Papelería corporativa, accesorios de escritorio, tintas y resmas de papel. 
+                        Ventas al por mayor y menor con entrega rápida.
+                    </p>
+                    <div class="slide-buttons">
+                        <a href="#productos" class="btn btn-primary">Productos de oficina</a>
+                        <a href="#contacto" class="btn btn-outline">Atención a empresas</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botones de Navegación -->
+        <button class="carousel-arrow prev" id="prevBtn" aria-label="Anterior">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="carousel-arrow next" id="nextBtn" aria-label="Siguiente">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <!-- Indicadores de Puntos -->
+        <div class="carousel-indicators" id="indicators">
+            <button class="dot active" data-index="0" aria-label="Ir a diapositiva 1"></button>
+            <button class="dot" data-index="1" aria-label="Ir a diapositiva 2"></button>
+            <button class="dot" data-index="2" aria-label="Ir a diapositiva 3"></button>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="nosotros" class="about section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">¿Quiénes somos?</h2>
+            <div class="about-content">
+                <p>Somos la Librería y Papelería "Jesús de la Misericordia", un negocio de carácter familiar que, desde el año 2011, acompaña a la comunidad de Amatitlán y sus alrededores. Nos dedicamos a ofrecer una variedad completa de artículos escolares, de oficina y librería en general, priorizando siempre la buena atención al cliente, los precios accesibles y la confianza.</p>
+                <p>Tras más de una década de servicio y con la reciente apertura de nuestra segunda sucursal, seguimos comprometidos con el crecimiento ordenado de nuestro negocio, priorizando la calidad y la atención a nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia (Timeline) -->
+    <section class="history section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-store"></i></div>
+                    <div class="timeline-content">
+                        <h3>2011</h3>
+                        <p>Inicio de operaciones de Librería y Papelería “Jesús de la Misericordia”.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="timeline-content">
+                        <h3>Crecimiento</h3>
+                        <p>Expansión de productos y servicios para atender las necesidades de nuestra comunidad.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-print"></i></div>
+                    <div class="timeline-content">
+                        <h3>Servicios Adicionales</h3>
+                        <p>Incorporación de impresiones, emplasticados y forrado de libros.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-star"></i></div>
+                    <div class="timeline-content">
+                        <h3>Julio 2025</h3>
+                        <p>Apertura de la segunda sucursal: "Jesús de la Misericordia II" ubicada en 2A Avenida 8A calle, Amatitlán.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="mission-vision section-padding bg-alt fade-in">
+        <div class="container mv-grid">
+            <div class="mv-card">
+                <div class="icon-wrapper"><i class="fas fa-bullseye"></i></div>
+                <h3>Misión</h3>
+                <p>"Ofrecer a la comunidad de Amatitlán y sus alrededores una variedad completa de artículos de papelería, librería y material de oficina, brindando un servicio cálido, personalizado y de confianza. El establecimiento se enfoca en facilitar las necesidades escolares y laborales de sus clientes con precios accesibles, manteniendo el trato cercano y familiar que lo caracteriza desde sus inicios."</p>
+            </div>
+            <div class="mv-card">
+                <div class="icon-wrapper"><i class="fas fa-eye"></i></div>
+                <h3>Visión</h3>
+                <p>"Ser un establecimiento comercial de referencia en la zona, reconocido por la calidad de su surtido, la eficiencia en su servicio y su constante adaptación a las necesidades de la comunidad. El negocio busca crecer de manera ordenada y sostenible, modernizando sus procesos internos para seguir siendo el aliado confiable de estudiantes, familias y negocios locales."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="products section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="libreria">📚 Librería</button>
+                <button class="filter-btn" data-filter="utiles">✏️ Útiles Escolares</button>
+                <button class="filter-btn" data-filter="oficina">💼 Oficina</button>
+                <button class="filter-btn" data-filter="arte">🎨 Arte</button>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- 1. Ábaco -->
+                <div class="product-card" data-category="utiles">
+                    <div class="product-img-wrapper">
+                        <img src="img/abaco.webp" alt="Ábaco" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Útiles escolares</span>
+                        <h3>Ábaco Escolar</h3>
+                        <p>Herramienta didáctica de conteo y aprendizaje matemático para nivel primario e preprimario.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Ábaco%20Escolar" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 2. Acuarela Fast -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Acuarela Fast 12 Colores.webp" alt="Acuarela Fast 12 Colores" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte</span>
+                        <h3>Acuarela Fast 12 Colores</h3>
+                        <p>Estuche de acuarelas escolares en 12 colores vibrantes lavables con pincel incluido.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Acuarela%20Fast%2012%20Colores" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 3. Almohadilla para Sello -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Almohadilla para Sello Fast Azul.webp" alt="Almohadilla para Sello Fast Azul" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Almohadilla para Sello Fast Azul</h3>
+                        <p>Cojinete para sellos entintado en color azul de alta durabilidad y secado rápido.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Almohadilla%20para%20Sello%20Fast%20Azul" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 4. Archivador Ampo -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Archivador Ampo T830 Carta.webp" alt="Archivador Ampo T830 Carta" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Archivador Ampo T830 Carta</h3>
+                        <p>Archivador de palanca tamaño carta resistente para la organización eficiente de documentos.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Archivador%20Ampo%20T830%20Carta" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 5. Bolígrafo Faber Castell -->
+                <div class="product-card" data-category="utiles">
+                    <div class="product-img-wrapper">
+                        <img src="img/Bolígrafo Faber Castell 062 Fino 0.7 negro.webp" alt="Bolígrafo Faber Castell 062 Fino 0.7 negro" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Útiles escolares</span>
+                        <h3>Bolígrafo Faber Castell 0.7 Negro</h3>
+                        <p>Bolígrafo de trazo fino 0.7 mm con tinta negra de flujo continuo y escritura suave.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Bolígrafo%20Faber%20Castell%200.7%20Negro" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 6. Borrador Fast -->
+                <div class="product-card" data-category="utiles">
+                    <div class="product-img-wrapper">
+                        <img src="img/Borrador Fast BF01 Plástico Pequeño.webp" alt="Borrador Fast BF01 Plástico Pequeño" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Útiles escolares</span>
+                        <h3>Borrador Fast Plástico Pequeño</h3>
+                        <p>Borrador de plástico blanco suave que borra limpiamente sin dañar el papel.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Borrador%20Fast%20Plástico%20Pequeño" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 7. Calculadora Científica -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Calculadora Científica Casio FX-82MS-2.webp" alt="Calculadora Científica Casio FX-82MS-2" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina / Útiles</span>
+                        <h3>Calculadora Casio FX-82MS-2</h3>
+                        <p>Calculadora científica con pantalla de 2 líneas y 240 funciones para estudiantes y profesionales.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Calculadora%20Casio%20FX-82MS-2" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 8. Compás Fast Metálico -->
+                <div class="product-card" data-category="utiles">
+                    <div class="product-img-wrapper">
+                        <img src="img/Compás Fast Metálico con Lápiz.webp" alt="Compás Fast Metálico con Lápiz" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Útiles escolares</span>
+                        <h3>Compás Fast Metálico con Lápiz</h3>
+                        <p>Compás metálico de precisión equipado con adaptabilidad para lápiz estándar.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Compás%20Fast%20Metálico" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 9. Corrector Fast -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Corrector Fast Tipo Pluma.webp" alt="Corrector Fast Tipo Pluma" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Corrector Fast Tipo Pluma</h3>
+                        <p>Corrector líquido en formato pluma con punta metálica para correcciones precisas.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Corrector%20Fast%20Tipo%20Pluma" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 10. Crayón de Cera Fast -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Crayón de Cera Fast 12 Colores Jumbo.webp" alt="Crayón de Cera Fast 12 Colores Jumbo" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte</span>
+                        <h3>Crayón de Cera 12 Colores Jumbo</h3>
+                        <p>Crayones gruesos jumbo no tóxicos, ideales para manos pequeñas y colores vivos.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Crayón%20de%20Cera%20Jumbo" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 11. Cuaderno Doble Anillo -->
+                <div class="product-card" data-category="libreria">
+                    <div class="product-img-wrapper">
+                        <img src="img/Cuaderno Doble Anillo Conquistador 100H Cuadros.webp" alt="Cuaderno Doble Anillo Conquistador 100H Cuadros" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Librería</span>
+                        <h3>Cuaderno Conquistador 100H Cuadros</h3>
+                        <p>Cuaderno espiral doble anillo de 100 hojas cuadrícula con pastas resistentes.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Cuaderno%20Conquistador%20100H%20Cuadros" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 12. Diccionario Larousse -->
+                <div class="product-card" data-category="libreria">
+                    <div class="product-img-wrapper">
+                        <img src="img/Diccionario Larousse Escolar Rojo.webp" alt="Diccionario Larousse Escolar Rojo" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Librería</span>
+                        <h3>Diccionario Larousse Escolar</h3>
+                        <p>Diccionario de la lengua española edición escolar esencial para estudiantes.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Diccionario%20Larousse%20Escolar" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 13. Engrapadora Fast -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Engrapadora Fast EF5 Pequeña.webp" alt="Engrapadora Fast EF5 Pequeña" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Engrapadora Fast EF5 Pequeña</h3>
+                        <p>Engrapadora compacta de escritorio para oficina y escolar con tamaño cómodo.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Engrapadora%20Fast%20EF5" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 14. Foamy Moldeable -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Foamy Moldeable Fast 10 g.webp" alt="Foamy Moldeable Fast 10 g" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte</span>
+                        <h3>Foamy Moldeable Fast 10g</h3>
+                        <p>Masa de foamy ultra ligera y flexible para manualidades y moldeado de figuras.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Foamy%20Moldeable%20Fast" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 15. Libreta Taquigrafía -->
+                <div class="product-card" data-category="libreria">
+                    <div class="product-img-wrapper">
+                        <img src="img/Libreta con Espiral Conquistador 3431 60H Taquigrafía.webp" alt="Libreta con Espiral Conquistador 3431 60H Taquigrafía" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Librería</span>
+                        <h3>Libreta Conquistador Taquigrafía</h3>
+                        <p>Libreta especial para taquigrafía y toma de notas de 60 hojas con espiral superior.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Libreta%20Taquigrafía" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 16. Libro Empastado Actas -->
+                <div class="product-card" data-category="libreria">
+                    <div class="product-img-wrapper">
+                        <img src="img/Libro Empastado Actas 100H.webp" alt="Libro Empastado Actas 100H" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Librería / Oficina</span>
+                        <h3>Libro Empastado Actas 100H</h3>
+                        <p>Libro empastado de 100 hojas con rayado formal para registro de actas y contabilidad.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Libro%20Empastado%20Actas" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 17. Papel Mantequilla -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Papel Mantequilla 24x36.webp" alt="Papel Mantequilla 24x36" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte / Arquitectura</span>
+                        <h3>Papel Mantequilla 24x36</h3>
+                        <p>Pliegos de papel mantequilla de alta transparencia para calcar y dibujo técnico.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Papel%20Mantequilla%2024x36" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 18. Perforador Fast -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Perforador Fast PF10 Negro.webp" alt="Perforador Fast PF10 Negro" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Perforador Fast PF10 Negro</h3>
+                        <p>Perforador metálico de 2 agujeros resistente y duradero para uso continuo.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Perforador%20Fast%20PF10" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 19. Pintura a Dedo Fast -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Pintura a Dedo Fast 6 Colores.webp" alt="Pintura a Dedo Fast 6 Colores" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte</span>
+                        <h3>Pintura a Dedo 6 Colores</h3>
+                        <p>Pintura dactilar lavable no tóxica para estimulación temprana y trabajos escolares.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Pintura%20a%20Dedo%20Fast" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 20. Pizarrón Krea -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Pizarrón Krea AW01 30x40 cm.webp" alt="Pizarrón Krea AW01 30x40 cm" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina / Útiles</span>
+                        <h3>Pizarrón Krea 30x40 cm</h3>
+                        <p>Pizarra blanca acrílica de 30x40 cm perfecta para anotaciones, listas y estudio.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Pizarrón%20Krea%2030x40" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 21. Plástico Laminar Fast -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Plástico Laminar Fast 5 mil.webp" alt="Plástico Laminar Fast 5 mil" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Plástico Laminar Fast 5 mil</h3>
+                        <p>Láminas térmicas para emplasticar documentos y carnes garantizando máxima protección.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Plástico%20Laminar%20Fast" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 22. Prensa Papeles Fast -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Prensa Papeles Fast 19 mm.webp" alt="Prensa Papeles Fast 19 mm" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina</span>
+                        <h3>Prensa Papeles Fast 19 mm</h3>
+                        <p>Clips sujetapapeles de presión metálicos de 19 mm para sujetar documentos firmemente.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Prensa%20Papeles%20Fast%2019mm" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 23. Regla Plástica Fast -->
+                <div class="product-card" data-category="utiles">
+                    <div class="product-img-wrapper">
+                        <img src="img/Regla Plástica Fast 30 cm.webp" alt="Regla Plástica Fast 30 cm" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Útiles escolares</span>
+                        <h3>Regla Plástica Fast 30 cm</h3>
+                        <p>Regla transparente de 30 cm graduada en milímetros y centímetros para trazo exacto.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Regla%20Plástica%20Fast%2030cm" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 24. Tabla para Plasticina -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Tabla para Plasticina 30x30 cm.webp" alt="Tabla para Plasticina 30x30 cm" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte</span>
+                        <h3>Tabla para Plasticina 30x30 cm</h3>
+                        <p>Superficie plástica lisa y lavable para modelado de plasticina sin ensuciar la mesa.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Tabla%20para%20Plasticina" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 25. Tarjetas IRASA -->
+                <div class="product-card" data-category="oficina">
+                    <div class="product-img-wrapper">
+                        <img src="img/Tarjetas IRASA 321 5x8 Blancas.webp" alt="Tarjetas IRASA 321 5x8 Blancas" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Oficina / Librería</span>
+                        <h3>Tarjetas IRASA 5x8 Blancas</h3>
+                        <p>Fichas bibliográficas blancas de 5x8 pulgadas idéales para organización de datos.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Tarjetas%20IRASA%205x8" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 26. Tijera Escolar Fast -->
+                <div class="product-card" data-category="utiles">
+                    <div class="product-img-wrapper">
+                        <img src="img/Tijera Escolar Fast de 5.webp" alt="Tijera Escolar Fast de 5" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Útiles escolares</span>
+                        <h3>Tijera Escolar Fast de 5"</h3>
+                        <p>Tijera escolar con punta redondeada de seguridad y mango ergonómico.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Tijera%20Escolar%20Fast" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- 27. Yeso Comprimido Vinci -->
+                <div class="product-card" data-category="arte">
+                    <div class="product-img-wrapper">
+                        <img src="img/Yeso Comprimido Vinci 10 Barras de Colores.webp" alt="Yeso Comprimido Vinci 10 Barras de Colores" class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Arte</span>
+                        <h3>Yeso Vinci 10 Barras Colores</h3>
+                        <p>Barras de yeso/tiza comprimida de colores vivos, de baja emisión de polvo.</p>
+                        <a href="https://wa.me/50256305571?text=Hola,%20quisiera%20consultar%20sobre:%20Yeso%20Vinci%2010%20Barras" target="_blank" class="btn btn-outline">Consultar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services section-padding bg-alt fade-in">
+        <div class="container">
+            <h2 class="section-title">Nuestros servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-print"></i>
+                    <h3>Impresiones</h3>
+                    <p>Impresiones a color y blanco/negro de alta calidad.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Emplasticado</h3>
+                    <p>Protección duradera para tus tarjetas y documentos importantes.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Forrado de libros</h3>
+                    <p>Servicio de forrado para proteger tus textos escolares.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Pago de impuestos</h3>
+                    <p>Gestión ágil para el pago de impuestos y trámites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Ubicación -->
+    <section id="contacto" class="contact-location section-padding fade-in">
+        <div class="container">
+            <h2 class="section-title">Visítanos y Contáctanos</h2>
+            <div class="contact-grid">
+                
+                <!-- Info & Map -->
+                <div class="location-info">
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> 2A Avenida 8A calle, Amatitlán, Guatemala</p>
+                        <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +502 5630-5571</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Correo:</strong> elimarpal@hotmail.com</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15451.986877969853!2d-90.6277!3d14.4855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890ed70be6c2db%3A0x8e8eb45a76e05d0f!2sAmatitl%C3%A1n%2C%20Guatemala!5e0!3m2!1ses!2s!4v1690000000000!5m2!1ses!2s" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="contact-form-container">
+                    <form id="contactForm" action="https://formsubmit.co/machicmonterrosoanabellailany@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde sitio web">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Número de teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <small id="message-error" class="error-msg">El mensaje debe tener al menos 10 caracteres.</small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+                        <p id="form-success" class="success-msg" style="display:none;">¡Mensaje enviado con éxito!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#nosotros">Historia</a></li>
+                    <li><a href="#nosotros">Misión</a></li>
+                    <li><a href="#nosotros">Visión</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#productos">Útiles escolares</a></li>
+                    <li><a href="#productos">Papelería</a></li>
+                    <li><a href="#productos">Librería</a></li>
+                    <li><a href="#productos">Oficina</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#servicios">Impresiones</a></li>
+                    <li><a href="#servicios">Emplasticados</a></li>
+                    <li><a href="#servicios">Forrado de libros</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 2A Av 8A calle, Amatitlán</li>
+                    <li><i class="fas fa-phone"></i> +502 5630-5571</li>
+                    <li><i class="fas fa-envelope"></i> elimarpal@hotmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Librería y Papelería “Jesús de la Misericordia II”. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/50256305571" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+50256305571" class="float-btn call" aria-label="Llamar">
+            <i class="fas fa-phone"></i>
+        </a>
+        <button id="scrollTopBtn" class="float-btn top" aria-label="Volver arriba">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
